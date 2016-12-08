@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gesture2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.guo.killview.view.BounceScroller
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:background="@android:color/holo_orange_dark" />-->
+        <TextView
+            android:text="dfas"
+            android:background="@android:color/holo_orange_dark"
+            android:textSize="1222sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.guo.killview.view.BounceScroller>
+</FrameLayout>

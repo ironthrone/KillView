@@ -23,6 +23,7 @@ public class ScrollableView extends View implements GestureDetector.OnGestureLis
     public ScrollableView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
+        setOverScrollMode(OVER_SCROLL_ALWAYS);
     }
 
     private void init(Context context) {
@@ -31,10 +32,9 @@ public class ScrollableView extends View implements GestureDetector.OnGestureLis
     }
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        gestureDetector.onTouchEvent(event);
+        boolean result = gestureDetector.onTouchEvent(event);
 //        scrollBy((int) event.getX(),0);
-        //why change this to return true,the onLongPress not called
-        return true;
+        return result || super.onTouchEvent(event);
     }
 
     @Override
