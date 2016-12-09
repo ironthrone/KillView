@@ -12,6 +12,8 @@ import android.widget.ScrollView;
 import com.guo.killview.R;
 import com.guo.killview.view.BounceScroller;
 
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
+
 public class BounceActivity extends AppCompatActivity{
 
     private static final String DEBUG_TAG = "Gestures";
@@ -25,8 +27,11 @@ public class BounceActivity extends AppCompatActivity{
         // Instantiate the gesture detector with the
         // application context and an implementation of
         // GestureDetector.OnGestureListener
-        BounceScroller scroller = ((BounceScroller) findViewById(R.id.scrollView));
-        scroller.enableHeader(true);
+//        BounceScroller scroller = ((BounceScroller) findViewById(R.id.scrollView));
+//        scroller.enableHeader(true);
+        ScrollView scroller = ((ScrollView) findViewById(R.id.scrollView));
+
+        OverScrollDecoratorHelper.setUpOverScroll(scroller);
     }
 
 }
