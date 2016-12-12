@@ -12,11 +12,4 @@
        android:layout_width="match_parent"
        android:layout_height="match_parent" />
 
-
-   <!--<TextView-->
-       <!--android:text="Adding a ScrollView within another ScrollView can be difficult. Most of the times it won’t end well. You will end up adding few workarounds. Instead, use the NestedScrollView as outlined here. A working sample can be found here as this is very useful when working with CoordinatorLayout"-->
-       <!--android:textSize="50sp"-->
-       <!--android:layout_width="match_parent"-->
-       <!--android:layout_height="wrap_content"-->
-       <!--android:id="@+id/textView" />-->
 </FrameLayout>

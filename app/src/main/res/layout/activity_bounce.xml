@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <com.guo.killview.view.BounceScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -21,5 +21,5 @@
             android:textSize="1222sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-    </ScrollView>
+    </com.guo.killview.view.BounceScrollView>
 </FrameLayout>
