@@ -19,11 +19,7 @@ import android.widget.OverScroller;
  * Created by Administrator on 2016/7/12.
  */
 public class FollowTouchView extends View {
-    private static final int MAX_FLING_Y = 1000;
-    private static final int MAX_FLING_X = 1000;
     private static final String TAG = FollowTouchView.class.getSimpleName();
-    private float oldX;
-    private float oldY = 0;
     private OverScroller mScroller;
     private GestureDetectorCompat mGestureDectector;
     private Paint mPaint;
@@ -73,8 +69,6 @@ public class FollowTouchView extends View {
     public void computeScroll() {
         boolean needInvalidate = false;
         if (mScroller.computeScrollOffset()) {
-            Log.d(TAG, "scroller current x : " + mScroller.getCurrX());
-            Log.d(TAG, "scroller current y : " + mScroller.getCurrY());
             scrollTo(mScroller.getCurrX(), mScroller.getCurrY());
             needInvalidate = true;
         }
